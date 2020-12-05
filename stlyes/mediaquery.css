@@ -18,7 +18,6 @@
 
     }
 
-  
     .main .navmenu .nav-logo h1{
     font-size: 1.7rem;
     letter-spacing: 6px;
@@ -30,8 +29,8 @@
         position: absolute;
         margin: 0;
         top: 7vh;
-        height: 328px;
-        width: 100%;
+        max-height: 485px;
+        width: 100vw;
         text-align: center;
         transform: translate(0%,0%);
 
@@ -45,14 +44,13 @@
    
 
         /*TRANSITION EFFECT*/
-        transition: height 0.3s ease-in;
+        transition: max-height 0.7s ease-in-out;
     }
     /*Remove Desktop List Margin*/
 
     .main .navmenu .navigation li{
-        margin: 0;
-        padding: 15px;
-        border: 0.5px solid rgb(85, 85, 85);
+        padding: 15px 0px;
+        border: 1px solid rgb(85, 85, 85);
     }
     /*CHANGE Anchor Tag and Icon Font color*/
     .main .navmenu .navigation li a,.main .navmenu .navigation li i{
@@ -87,7 +85,7 @@
 
     /* MENU HIDE/SHOW */
     .main .navmenu .navigation.hide{
-        height:0px ;
+        max-height:0px ;
     }
 
     .main .navmenu .navigation.hide li{
@@ -98,32 +96,31 @@
 
     /***COMPANY SUB BAR***/
 
-    .comp-side{
-    /*POSITIONING*/
-
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    
-    /*DESIGN*/
-    background-color: grey;
-    border: 0px solid;
-    border-radius: 10px;
-
-    /*SHOW*/
-    height: 0px;
-
-    }
-
     .comp-side.show{
-    height: auto;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
+        /*POSITIONING*/
+        margin: 0;
+        padding: 0;
+        position: relative;
+        transform: translate(0, 16px);
+        text-align: center;
+        
+        /*DESIGN*/
+        background-color: white;
+        border-radius: 0px;
+    
+        /*SHOW*/
+        width: 100vw;
+        height: 157px;
+        transition: height 0.5s ease-in-out;
+        
+    
+    }
+    .comp-side.hide{
+        height: 0px;
+
     }
     .comp-side.hide li{
-    display: none;
+        display: none;
     }
 
     /**** NAVIGATION END****/  

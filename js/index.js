@@ -24,6 +24,9 @@ function showNav() {
 
         menuBar.classList.remove('show')
         menuBar.classList.add('hide')
+        //REMOVE SUBNAV ON COMPANY//
+        compSub.classList.remove('show')
+        compSub.classList.add('hide')
     }
 }
 
