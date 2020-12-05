@@ -46,15 +46,13 @@
 
         /*TRANSITION EFFECT*/
         transition: height 0.3s ease-in;
-        
-
     }
     /*Remove Desktop List Margin*/
 
     .main .navmenu .navigation li{
         margin: 0;
         padding: 15px;
-        border: 0.5px solid rgb(148, 148, 148);
+        border: 0.5px solid rgb(85, 85, 85);
     }
     /*CHANGE Anchor Tag and Icon Font color*/
     .main .navmenu .navigation li a,.main .navmenu .navigation li i{
@@ -65,6 +63,7 @@
     /*LIST HOVER*/
     .main .navmenu .navigation li:nth-child(-n + 5):hover{
         background-color: rgb(58, 58, 58);
+        border-radius: 0px;
 
     }
 
@@ -89,10 +88,41 @@
     /* MENU HIDE/SHOW */
     .main .navmenu .navigation.hide{
         height:0px ;
-        display: none;
     }
 
     .main .navmenu .navigation.hide li{
+    display: none;
+    }
+
+
+
+    /***COMPANY SUB BAR***/
+
+    .comp-side{
+    /*POSITIONING*/
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    
+    /*DESIGN*/
+    background-color: grey;
+    border: 0px solid;
+    border-radius: 10px;
+
+    /*SHOW*/
+    height: 0px;
+
+    }
+
+    .comp-side.show{
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    }
+    .comp-side.hide li{
     display: none;
     }
 
