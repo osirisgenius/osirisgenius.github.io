@@ -30,7 +30,7 @@
         position: absolute;
         margin: 0;
         top: 7vh;
-        height: auto;
+        height: 328px;
         width: 100%;
         text-align: center;
         transform: translate(0%,0%);
@@ -45,7 +45,9 @@
    
 
         /*TRANSITION EFFECT*/
-        transition: height 200ms ease-in;
+        transition: height 0.3s ease-in;
+        
+
     }
     /*Remove Desktop List Margin*/
 
@@ -87,6 +89,7 @@
     /* MENU HIDE/SHOW */
     .main .navmenu .navigation.hide{
         height:0px ;
+        display: none;
     }
 
     .main .navmenu .navigation.hide li{
