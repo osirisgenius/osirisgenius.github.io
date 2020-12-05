@@ -1,0 +1,151 @@
+
+/* SMALL DEVICES*/
+@media (max-width:480px){
+
+    /*HIDE EVERYTHING ON MOBILE*/
+    .hide-on-mobile{
+        display: none;
+    /*HIDE HIDE*/
+    }
+    .main {
+        margin: 0;
+    }
+
+    /**** NAVIGATION START****/  
+    .main .navmenu{
+        width: 100%;
+        height: 7vh;
+
+    }
+
+  
+    .main .navmenu .nav-logo h1{
+    font-size: 1.7rem;
+    letter-spacing: 6px;
+    }
+
+    /*NAVIGATION*/
+    .main .navmenu .navigation{
+        /*Positioning of NAVMENU*/
+        position: absolute;
+        margin: 0;
+        top: 7vh;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        transform: translate(0%,0%);
+
+        /*Template of NAVMENU*/
+        display: grid;
+        grid-template-columns: 1fr;
+
+        /*NAVMENU Design*/
+        background-color: white;
+        border-radius: unset;
+   
+
+        /*TRANSITION EFFECT*/
+        transition: height 200ms ease-in;
+    }
+    /*Remove Desktop List Margin*/
+
+    .main .navmenu .navigation li{
+        margin: 0;
+        padding: 15px;
+        border: 0.5px solid rgb(148, 148, 148);
+    }
+    /*CHANGE Anchor Tag and Icon Font color*/
+    .main .navmenu .navigation li a,.main .navmenu .navigation li i{
+        color: var(--navblue);
+        padding: 0px;
+    }
+
+    /*LIST HOVER*/
+    .main .navmenu .navigation li:nth-child(-n + 5):hover{
+        background-color: rgb(58, 58, 58);
+
+    }
+
+    .main .navmenu .navigation li:hover > a{
+    color: white;
+    }
+    /*LIST HOVER END*/
+
+    /* CHANGE Anchor Tag Hover Background*/
+    .main .navmenu .navigation li a:hover{
+        background-color: rgb(58, 58, 58);
+    }
+
+    .navmenu .menu-bar{
+       position: absolute;
+       right: 30px;
+    }
+    .navmenu .menu-bar i{
+        color: white;
+    }
+
+    /* MENU HIDE/SHOW */
+    .main .navmenu .navigation.hide{
+        height:0px ;
+    }
+
+    .main .navmenu .navigation.hide li{
+    display: none;
+    }
+
+    /**** NAVIGATION END****/  
+/********************************* MAIN INTRO START **************************/
+    .main-intro .company-profile{
+        grid-template-rows:auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: calc(100vh - 197.6px) 1fr;
+    }
+
+    .main-intro .company-profile .about-us{
+        background-image: linear-gradient(red);
+        grid-template-rows: auto;
+    }
+
+    .main-intro .company-profile .image-about img {
+        
+        width: 90vw;
+        border-radius: 0px;
+    }
+
+    /*HIDE ABOUT US LINE*/
+    .main-intro .company-profile .image-about h4::before,.main-intro .company-profile .image-about h4::after{
+        display: none;
+    }
+
+    /*ABOUT US TEXT*/
+    .main-intro .company-profile .about-us-text{
+        width: 90%;
+        height: 80%;
+        overflow: scroll;
+
+        /*TEXT FORMAT*/
+
+    }
+
+    .advertisement{ 
+        text-align: center;
+        grid-template-rows: 140px 1fr auto;
+    }
+
+    .product-intro{
+        display: none;
+    }
+
+}
+
+
+/*TABLET DEVICES*/
+@media (min-width:479px) and (max-width:768px){}
+
+/*DESKTOP DEVICES*/
+@media (min-width:998px){
+    .navmenu .menu-bar i{
+        display: none;
+    }
+}
+
