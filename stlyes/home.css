@@ -4,18 +4,18 @@
 }
 
 .main{
-    margin: 0px 5vw 0px 5vw;
+    margin: 0px 5vw;
     height: 100vh;
-    width: auto;
+    width: 90vw;
 }
 
 
 /***********************************MAIN NAVBAR MENU**************************/
 .main .navmenu{
     position: fixed;
-    width: 89.9%;
+    width: 90vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 10px;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     background-color: var(--navblue);
     z-index: 98;
@@ -32,19 +32,19 @@
 
 /************NAVBAR MENU************/
 .main .navmenu .navigation{
-    margin: 10px;
+    margin: 5px 20px;
     padding: 0;
-    display: flex;
-    align-items: center;
-    transform: translate(28%,0%);
+    display:flex;
 }
 
+/*ICON ALIGNMENT*/
+
 .main .navmenu .navigation li{
-padding: 15px 10px;
+    padding: 15px 10px;
 }
 
 .main .navmenu .navigation li a{
-    padding: 10px;
+
     color: white;
     font-size: 1.1rem;
 }
