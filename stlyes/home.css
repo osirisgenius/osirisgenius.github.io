@@ -128,7 +128,7 @@
 /******WELCOME MESSAGE******/ 
 
 .main-intro .welcome-message    {
-    margin-top: 12vh;
+    margin-top: 90px;
     text-align: center;
 }
 
@@ -136,7 +136,7 @@
     margin-top: 1vh;
     display: grid;
     grid-template-rows: 78vh;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 55% 1fr;
 
     /*text style*/
 }
@@ -158,7 +158,7 @@
     border-radius: 10px;
     background-color: rgba(233, 233, 233, 0.493);
     width: 90%;
-    height: 60%;
+    height: auto;
     /*TEXT FORMAT*/
     letter-spacing: 1px;
     line-height: 30px;
@@ -217,8 +217,13 @@
     justify-items: center;
 }
 
+.advertisement #slideshow-example{
+    text-align: center;
+}
+
 .advertisement #slideshow-example img{
-    width: 95%;
+    position: relative;
+    width: 80%;
     box-shadow: 0px 0px 8px 2px #888888;
 }
 .advertisement .envi-tech{

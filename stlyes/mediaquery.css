@@ -122,20 +122,21 @@
     /**** NAVIGATION END****/  
 /********************************* MAIN INTRO START **************************/
     .main-intro .company-profile{
-        margin-top: 80px;
-        grid-template-rows:auto;
         grid-template-columns: 1fr;
-        grid-template-rows: calc(100vh - 197.6px) 1fr;
     }
 
     .main-intro .company-profile .about-us{
         background-image: linear-gradient(red);
-        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
+    .main-intro .company-profile .image-about{
+        height: 45%;
+    }
     .main-intro .company-profile .image-about img {
-        
         width: 90vw;
+        height: 75%;
         border-radius: 0px;
     }
 
@@ -147,8 +148,8 @@
     /*ABOUT US TEXT*/
     .main-intro .company-profile .about-us-text{
         width: 90%;
-        height: 80%;
-        overflow: scroll;
+        height: auto;
+
 
         /*TEXT FORMAT*/
 
@@ -160,6 +161,14 @@
     }
 
     .product-intro{
+        display: none;
+    }
+
+    .timeline-text{
+        display: none;
+    }
+
+    .timeline{
         display: none;
     }
 
