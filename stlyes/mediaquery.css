@@ -149,6 +149,10 @@
         grid-template-rows: 140px 1fr auto;
     }
 
+    .advertisement #slideshow-example img{
+        width: 95%;
+    }
+
     .product-intro{
         display: none;
     }
