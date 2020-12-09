@@ -15,7 +15,7 @@
 /***********************************MAIN NAVBAR MENU**************************/
 .main .navmenu{
     position: fixed;
-    margin-right: 5vw;
+    width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -133,7 +133,6 @@
 }
 
 .main-intro .company-profile{
-    margin-top: 1vh;
     display: grid;
     grid-template-rows: 78vh;
     grid-template-columns: 55% 1fr;
@@ -154,17 +153,21 @@
 
 /*****LEFT-SIDE HOME*******/
 .main-intro .company-profile .about-us-text{
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: rgba(233, 233, 233, 0.493);
+    margin-top: 10px;
     width: 90%;
-    height: auto;
     /*TEXT FORMAT*/
     letter-spacing: 1px;
     line-height: 30px;
     font-size: 0.85rem;
     color: rgb(85, 85, 85);
 }
+.main-intro .company-profile .about-us-text p{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(233, 233, 233, 0.493);
+
+}
+
 
 .main-intro .company-profile .image-about h4{
     margin-top: 20px;
