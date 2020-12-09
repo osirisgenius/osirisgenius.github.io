@@ -39,7 +39,7 @@
         flex-direction: column;
 
         /*NAVMENU Design*/
-        background-color: #2c3e50;
+        background-color: #3a596d;
         border-radius: unset;
    
 
@@ -49,6 +49,9 @@
     /*Remove Desktop List Margin*/
 
     .main .navmenu .navigation li{
+        margin: 0;
+        padding: 15px 0px ;
+        text-align: center;
         width: 100vw;
     }
     /*CHANGE Anchor Tag and Icon Font color*/
@@ -58,10 +61,9 @@
     }
 
     /*LIST HOVER*/
-    .main .navmenu .navigation li:nth-child(-n + 5):hover{
-        background-color: rgb(44, 44, 44);
+    .main .navmenu .navigation li:nth-child(-n + 4):hover{
+        background-color: #2c3e50;
         border-radius: 0px;
-
     }
 
     .main .navmenu .navigation li:hover > a{
@@ -99,15 +101,14 @@
         text-align: center;
         
         /*DESIGN*/
-        background-color: white;
+        background-color: #000000a4;
         border-radius: 0px;
+
     
         /*SHOW*/
         width: 100vw;
-        height: 200px;
+        height: 153px;
         transition: height 0.5s ease-in-out;
-        
-    
     }
     .comp-side.hide{
         height: 0px;
@@ -117,9 +118,11 @@
         display: none;
     }
 
+
     /**** NAVIGATION END****/  
 /********************************* MAIN INTRO START **************************/
     .main-intro .company-profile{
+        margin-top: 80px;
         grid-template-rows:auto;
         grid-template-columns: 1fr;
         grid-template-rows: calc(100vh - 197.6px) 1fr;
