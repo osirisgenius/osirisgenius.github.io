@@ -14,8 +14,8 @@
     /**** NAVIGATION START****/  
     .main .navmenu{
         width: 100vw;
-        height: 7vh;
-
+        height: 68px;
+        z-index: 99;
     }
 
     .main .navmenu .nav-logo h1{
@@ -28,7 +28,7 @@
         /*Positioning of NAVMENU*/
         position: absolute;
         margin: 0;
-        top: 7vh;
+        top: 69px;
         height: 100vh;
         width: 100vw;
         text-align: center;
@@ -39,7 +39,7 @@
         flex-direction: column;
 
         /*NAVMENU Design*/
-        background-color: #3a596d;
+        background-color: #2c4455;
         border-radius: unset;
    
 
