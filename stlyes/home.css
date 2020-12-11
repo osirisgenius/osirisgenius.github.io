@@ -64,7 +64,7 @@
 }
 
 /*NAV MENU HOVER*/
-.navmenu .navigation li:nth-child(-n + 4):hover{
+.navmenu .navigation li:nth-child(-n + 5):hover{
     background-color: white;
     border: 0px solid;
     border-radius: 10px;
@@ -234,15 +234,12 @@
 /********************************PRODUCTS*************************************/
 
 .product-intro{
-    height: auto;
-    -webkit-transition: height 0.5s linear;
-    -moz-transition: height 0.5s linear;
-    transition: height 0.5s linear;
+    display: grid;
+    justify-items: center;
 }
 
 .product-text{
     margin-top: 2%;
-    text-align: center;
 }
 
 .product-text::before{
@@ -264,6 +261,7 @@
 }
 
 .desc{
+    width: 85%;
     text-align: center;
     margin: 15px 0;
     letter-spacing: 1px;
@@ -273,7 +271,33 @@
 
 /* PRODUCTS SAMPLE*/
 
+
+.product-sample{
+    padding: 0;
+    width: auto;
+    height: 500px;
+    z-index: 96;
+    /*DISPLAY DATA*/
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 230px 230px 230px 230px;
+    grid-template-rows: 200px 200px;
+    justify-items: center;
+    align-items: center;
+}
+
+.product-sample li{
+    margin: 10px;
+}
+
+.product-sample li a{
+    z-index: 97;
+}
+
+
+/*
 .products-sample{
+    background-color: ;
     margin: 0;
     position: relative;
     top: 2.5vh;
@@ -321,9 +345,9 @@
     opacity: 1.0;
     
 }
-
+*//*
 .products-sample a{
-    /*DESIGN*/
+    /*DESIGN
     text-align: center;
     background-image: linear-gradient(to right, #05327a 0%, #748f9c 51%, #05327a 100%);
     color: white;
@@ -332,7 +356,7 @@
     border: 1px solid rgb(54, 54, 54);
     border-top: unset;
 
-    /*POSITIONING*/
+    /*POSITIONING
     padding: 20px;
     height: 20px;
     width: 190px;
@@ -341,7 +365,7 @@
 .products-sample a:hover{
     background-image: linear-gradient(to right, #748f9c 0%, #05327a 51%, #748f9c 100%);
 }
-
+*/
 
 
 /************************************TIMELINE***************************************/
