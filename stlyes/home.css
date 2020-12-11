@@ -5,7 +5,6 @@
 
 .main{
     margin: 0px 5vw;
-    height: 100vh;
 }
 
 .fa{
@@ -13,9 +12,9 @@
 }
 
 /***********************************MAIN NAVBAR MENU**************************/
-.main .navmenu{
+.navmenu{
+    margin: 0px 5vw;
     position: fixed;
-    width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -25,8 +24,8 @@
 }
 
 /*NAVBAR LOGO*/
-.main .navmenu .nav-logo{
-    margin-left: 2vw;
+.navmenu .nav-logo{
+    margin-left: 3vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.2rem;
     color: white;
@@ -34,7 +33,7 @@
 }
 
 /************NAVBAR MENU************/
-.main .navmenu .navigation{
+.navmenu .navigation{
     margin: 5px 20px;
     padding: 0;
     display:flex;
@@ -43,18 +42,18 @@
 
 /*ICON ALIGNMENT*/
 
-.main .navmenu .navigation li{
+.navmenu .navigation li{
     margin: 0 10px;
     padding: 15px 10px;
 }
 
-.main .navmenu .navigation li a{
+.navmenu .navigation li a{
 
     color: white;
     font-size: 1.1rem;
 }
 /*ICON CARET*/
-.main .navmenu .navigation i{
+.navmenu .navigation i{
     margin: 0px 5px;
     color: white;
 }
@@ -65,17 +64,17 @@
 }
 
 /*NAV MENU HOVER*/
-.main .navmenu .navigation li:nth-child(-n + 4):hover{
+.navmenu .navigation li:nth-child(-n + 4):hover{
     background-color: white;
     border: 0px solid;
     border-radius: 10px;
 }
 
-.main .navmenu .navigation li:hover > a{
+.navmenu .navigation li:hover > a{
     color: var(--navblue);
 }
 
-.main .navmenu .navigation li:hover > a i{
+.navmenu .navigation li:hover > a i{
     color: var(--navblue);
 }
 
@@ -161,12 +160,6 @@
     font-size: 0.85rem;
     color: rgb(85, 85, 85);
 }
-.main-intro .company-profile .about-us-text p{
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: rgba(233, 233, 233, 0.493);
-
-}
 
 
 .main-intro .company-profile .image-about h4{
@@ -241,8 +234,7 @@
 /********************************PRODUCTS*************************************/
 
 .product-intro{
-    height: 90vh;
-    overflow: hidden;
+    height: auto;
     -webkit-transition: height 0.5s linear;
     -moz-transition: height 0.5s linear;
     transition: height 0.5s linear;
@@ -273,7 +265,7 @@
 
 .desc{
     text-align: center;
-    margin: 20px 30vh;
+    margin: 15px 0;
     letter-spacing: 1px;
     line-height: 25px;
     align-items: center;

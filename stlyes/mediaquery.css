@@ -1,6 +1,10 @@
 
 /* SMALL DEVICES*/
 @media (max-width:480px){
+    
+    body{
+        background-image:linear-gradient(to right, rgba(255, 255, 255, 0.65), rgb(248, 248, 248)), url(/img/comp.jpg);
+    }
 
     /*HIDE EVERYTHING ON MOBILE*/
     .hide-on-mobile{
@@ -12,19 +16,20 @@
     }
 
     /**** NAVIGATION START****/  
-    .main .navmenu{
+    .navmenu{
+        margin: 0;
         width: 100vw;
         height: 68px;
         z-index: 99;
     }
 
-    .main .navmenu .nav-logo h1{
+    .navmenu .nav-logo h1{
     font-size: 1.7rem;
     letter-spacing: 6px;
     }
 
     /*NAVIGATION*/
-    .main .navmenu .navigation{
+    .navmenu .navigation{
         /*Positioning of NAVMENU*/
         position: absolute;
         margin: 0;
@@ -48,25 +53,25 @@
     }
     /*Remove Desktop List Margin*/
 
-    .main .navmenu .navigation li{
+    .navmenu .navigation li{
         margin: 0;
         padding: 15px 0px ;
         text-align: center;
         width: 100vw;
     }
     /*CHANGE Anchor Tag and Icon Font color*/
-    .main .navmenu .navigation li a,.main .navmenu .navigation li i{
+    .navmenu .navigation li a,.main .navmenu .navigation li i{
         color: white;
         padding: 0px;
     }
 
     /*LIST HOVER*/
-    .main .navmenu .navigation li:nth-child(-n + 4):hover{
+    .navmenu .navigation li:nth-child(-n + 4):hover{
         background-color: #2c3e50;
         border-radius: 0px;
     }
 
-    .main .navmenu .navigation li:hover > a{
+    .navmenu .navigation li:hover > a{
     color: white;
     }
     /*LIST HOVER END*/
@@ -80,11 +85,11 @@
     }
 
     /* MENU HIDE/SHOW */
-    .main .navmenu .navigation.hide{
+    .navmenu .navigation.hide{
         max-height:0px ;
     }
 
-    .main .navmenu .navigation.hide li{
+    .navmenu .navigation.hide li{
     display: none;
     }
 
@@ -121,13 +126,20 @@
 
     /**** NAVIGATION END****/  
 /********************************* MAIN INTRO START **************************/
+    .main-intro{
+        background-image: unset;
+    }
+    
     .main-intro .company-profile{
         grid-template-columns: 1fr;
     }
 
     .main-intro .company-profile .about-us{
-        background-image: linear-gradient(red);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        justify-items: stretch;
     }
     .main-intro .company-profile .image-about img {
         width: 90vw;
@@ -140,11 +152,17 @@
     }
 
     /*ABOUT US TEXT*/
-    .main-intro .company-profile .about-us-text p{
-        margin: 0px 10px;
+    .main-intro .company-profile .about-us-text{
+        margin: 0;
     }
 
+    .main-intro .company-profile .about-us-text p{
+        margin: 15px 10px;
+    }
+
+    /*ADVERTISEMENT START*/
     .advertisement{ 
+        margin-top: 6vh;
         text-align: center;
         grid-template-rows: 140px 1fr auto;
     }
@@ -153,9 +171,65 @@
         width: 95%;
     }
 
-    .product-intro{
+    .advertisement .envi-tech-img img{
+        width: 70%;
+    }
+    /*END OF INTRO*/
+    /*START OF PRODUCT DISPLAY*/
+    /*.product-intro{
+        display: none;
+    }*/
+    .product-text{
+        font-size: 0.8rem;
+    }
+    .product-text::before,.product-text::after{
         display: none;
     }
+
+    .desc{
+        text-align: center;
+        font-size: 0.85rem;
+        margin: 15px;
+    }
+
+    .products-sample{
+        /*positioning*/
+        height: unset;
+        margin: 0;
+        left: 2vh;
+        width: 92vw;
+
+        /*display*/
+
+        grid-auto-flow:row ;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        /*design*/
+        background-color: unset;
+    }
+    .products-sample .image-holder{
+        width: 230px;
+        height: 200px;
+        margin: 20px 20px 0px 20px;
+        overflow: hidden;
+    }
+
+    .products-sample img{
+        width: 100%;
+        height: 100%;
+        transition: transform ease 0.3s;
+        opacity: 1;
+    }
+
+    .image-holder1{
+        width: 230px;
+        height: 200px;
+        margin: 15px 20px 0px 20px;
+        overflow: hidden;
+    }
+    
+    /* END OF PRODUCT DISPLAY*/
+
 
     .timeline-text{
         display: none;
