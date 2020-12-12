@@ -1,111 +1,11 @@
-:root{
-    --navblue:rgb(1, 3, 99);
-    --lining:rgb(85, 85, 85);
-}
-
-.main{
+.container{
+    box-shadow: 1px 1px 5px 2px #4d4d4d;
     margin: 0px 5vw;
-    height: 110vh;
+
 }
 
 .fa{
     display: inline;
-}
-
-/***********************************MAIN NAVBAR MENU**************************/
-.navmenu{
-    margin: 0px 5vw;
-    position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    background-color: var(--navblue);
-    z-index: 98;
-    box-shadow: 1px 1px 5px 2px #4d4d4d;
-}
-
-/*NAVBAR LOGO*/
-.navmenu .nav-logo{
-    margin-left: 3vw;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.2rem;
-    color: white;
-    letter-spacing: 10px;
-}
-
-/************NAVBAR MENU************/
-.navmenu .navigation{
-    margin: 5px 20px;
-    padding: 0;
-    display:flex;
-    align-items: center;
-}
-
-/*ICON ALIGNMENT*/
-
-.navmenu .navigation li{
-    margin: 0 10px;
-    padding: 15px 10px;
-}
-
-.navmenu .navigation li a{
-
-    color: white;
-    font-size: 1.1rem;
-}
-/*ICON CARET*/
-.navmenu .navigation i{
-    margin: 0px 5px;
-    color: white;
-}
-/*ICON MENU BAR*/
-.navigation .menu-bar i{
-    right: 10%;
-    color: white;
-}
-
-/*NAV MENU HOVER*/
-.navmenu .navigation li:nth-child(-n + 5):hover{
-    background-color: white;
-    border: 0px solid;
-    border-radius: 10px;
-}
-
-.navmenu .navigation li:hover > a{
-    color: var(--navblue);
-}
-
-.navmenu .navigation li:hover > a i{
-    color: var(--navblue);
-}
-
-
-/***COMPANY SUB BAR***/
-
-.comp-side{
-    /*POSITIONING*/
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    transform: translate(-12px, 20px);
-    text-align: left;
-    
-    /*DESIGN*/
-    background-color: var(--navblue);
-    border: 0px solid;
-    border-radius: 10px;
-
-    /*SHOW*/
-    width: 180px;
-    height: 0px;
-
-}
-
-.comp-side.show{
-    height: auto;
-}
-.comp-side.hide li{
-    display: none;
 }
 
 /*********************************MAIN CONTENT********************************/
@@ -120,10 +20,8 @@
     z-index: 0;
 
     /*position and properties*/
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: 110vh;
 }
 
 /******WELCOME MESSAGE******/ 
