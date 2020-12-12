@@ -5,6 +5,7 @@
 
 .main{
     margin: 0px 5vw;
+    height: 110vh;
 }
 
 .fa{
@@ -122,6 +123,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 110vh;
 }
 
 /******WELCOME MESSAGE******/ 
@@ -152,13 +154,16 @@
 
 /*****LEFT-SIDE HOME*******/
 .main-intro .company-profile .about-us-text{
-    margin-top: 10px;
-    width: 90%;
+    width: 95%;
     /*TEXT FORMAT*/
     letter-spacing: 1px;
     line-height: 30px;
     font-size: 0.85rem;
     color: rgb(85, 85, 85);
+}
+
+.main-intro .company-profile .about-us-text p{
+    margin: 0;
 }
 
 

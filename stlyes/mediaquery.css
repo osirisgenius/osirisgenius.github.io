@@ -163,7 +163,7 @@
 
     /*ADVERTISEMENT START*/
     .advertisement{ 
-        margin-top: 6vh;
+        margin-top: 1vh;
         text-align: center;
         grid-template-rows: 140px 1fr auto;
     }
@@ -171,7 +171,9 @@
     .advertisement #slideshow-example img{
         width: 95%;
     }
-
+    .advertisement .envi-tech{
+        width: 95%;
+    }
     .advertisement .envi-tech-img img{
         width: 70%;
     }
