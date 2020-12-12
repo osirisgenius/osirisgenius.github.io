@@ -271,61 +271,44 @@
 
 /* PRODUCTS SAMPLE*/
 
-
+/*
 .product-sample{
     padding: 0;
     width: auto;
     height: 500px;
     z-index: 96;
-    /*DISPLAY DATA*/
+
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 230px 230px 230px 230px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 235px 235px 235px 235px;
+    grid-template-rows: 210px 210px;
     justify-items: center;
     align-items: center;
 }
 
 .product-sample li{
-    margin: 10px;
-}
-
-.product-sample li a{
-    z-index: 97;
-}
-
-
-/*
-.products-sample{
-    background-color: ;
-    margin: 0;
-    position: relative;
-    top: 2.5vh;
-    left: 15vw;
-    width: 70vw;
-    height: 70vh;
-    background-color: white;
-
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-}
-
-.products-sample .image-holder{
+    text-align: center;
     width: 230px;
     height: 200px;
-    margin: 40px 20px 0px 20px;
     overflow: hidden;
-    border: 1px solid rgb(54, 54, 54);
+    margin: 10px;
+    cursor: pointer;
 }
 
-.products-sample img{
+.product-sample li img{
     width: 100%;
     height: 100%;
     transition: transform ease 0.3s;
-    opacity: 0.3;
+}
+
+.product-sample li a{
+    position: relative;
+    justify-items: stretch;
+    top: -117.5px;
+    color: rgb(8, 8, 8);
+    font-size: 1.2rem;
+    background-color: ;
+    overflow: hidden;
 }
 
 .image-holder1{
@@ -340,32 +323,15 @@
     cursor: pointer;
 }
 
-.products-sample img:hover{
+.product-sample li img:hover{
     transform: scale(1.2);
     opacity: 1.0;
-    
 }
-*//*
-.products-sample a{
-    /*DESIGN
-    text-align: center;
-    background-image: linear-gradient(to right, #05327a 0%, #748f9c 51%, #05327a 100%);
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 700;
-    border: 1px solid rgb(54, 54, 54);
-    border-top: unset;
-
-    /*POSITIONING
-    padding: 20px;
-    height: 20px;
-    width: 190px;
-}
-
-.products-sample a:hover{
-    background-image: linear-gradient(to right, #748f9c 0%, #05327a 51%, #748f9c 100%);
+.product-sample li:hover > a {
+    background-image: linear-gradient(red,blue);
 }
 */
+
 
 
 /************************************TIMELINE***************************************/
