@@ -131,7 +131,8 @@
     }
     
     .main-intro .company-profile{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .main-intro .company-profile .about-us{
@@ -139,9 +140,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        justify-items: stretch;
     }
     .main-intro .company-profile .image-about img {
+        position: relative;
         width: 90vw;
         border-radius: 0px;
     }
@@ -175,10 +176,15 @@
         width: 70%;
     }
     /*END OF INTRO*/
+    /**************************** PRODUCT ***********************
     /*START OF PRODUCT DISPLAY*/
     /*.product-intro{
         display: none;
     }*/
+
+    .product-intro{
+        display: none;
+    }
     .product-text{
         font-size: 0.8rem;
     }
