@@ -5,16 +5,16 @@
 
 /***********************************MAIN NAVBAR MENU**************************/
 .navmenu{
+    /*POSITIONING*/
     margin: 0px 5vw;
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 
-    box-shadow: 1px 1px 5px 2px #4d4d4d;
-
     /*DESIGN*/
     background-color: var(--navblue);
+    box-shadow: 1px 1px 5px 2px #4d4d4d;
     z-index: 999;
 }
 
