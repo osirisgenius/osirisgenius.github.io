@@ -1,29 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import "/stlyes/navmenu.css";
 @import "/stlyes/home.css";
+@import "/stlyes/timeline.css";
 @import "/stlyes/mediaquery.css";
 
-body,html{
-    color: rgb(85, 85, 85);
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-    
-}
 
-ul{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-    cursor: pointer;
-}
-i{
-    cursor: pointer;    
-}
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
-}
 
 
