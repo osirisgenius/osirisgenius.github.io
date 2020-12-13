@@ -34,8 +34,8 @@
 
 .main-intro .company-profile{
     display: grid;
-    grid-template-rows: 78vh;
-    grid-template-columns: 55% 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
 
     /*text style*/
 }
