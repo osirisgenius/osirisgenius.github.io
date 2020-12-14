@@ -220,17 +220,18 @@
 
     .product-sample li{
 
-        width: 150px;
+        width: 40vw;
         height: 120px;
 
     }
     .product-sample li img{
-        width: 155px;
+        width: 40vw;
         height: 120px;
     }
 
     .product-sample li p{
-        width: 132px;
+        width: 40vw;
+        padding: 10px 0px;
         height: auto;
         font-size: 0.8rem;
         transform: translate(-1px,-3px);
@@ -279,7 +280,7 @@
 @media (min-width:479px) and (max-width:768px){}
 
 /*DESKTOP DEVICES*/
-@media (min-width:998px){
+@media (min-width:767px) and (max-width:1024px){
     .navmenu .menu-bar i{
         display: none;
     }
