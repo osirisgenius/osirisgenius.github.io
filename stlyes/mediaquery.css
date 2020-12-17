@@ -277,12 +277,13 @@
 
 
 /*TABLET DEVICES*/
-@media (min-width:479px) and (max-width:768px){}
+@media (min-width:479px) and (max-width:768px){
+
+}
 
 /*DESKTOP DEVICES*/
-@media (min-width:767px) and (max-width:1024px){
+@media (min-width:767px){
     .navmenu .menu-bar i{
         display: none;
     }
 }
-
