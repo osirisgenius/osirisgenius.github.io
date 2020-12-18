@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stlyes/login.css">
+    
+</head>
+<body>
+    <div class="main">
+            <div class="top-container">
+                <div class="return-icon">
+                    <a href="login.html"><i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        <div class="container-1">
+            <div class="companyname">
+                <img src="/img/icon.png" alt="">
+            </div>
+            <div class="login-title">
+                <h1 class="th2">Sign-up</h1>
+            </div>
+            <form action="signup.php" class="signup-form">
+                <h3>Account</h3>
+                <input type="email" placeholder="Enter Email">
+                <input type="password" placeholder="Enter Password">
+                <input type="password" placeholder="Repeat Password">
+                <h3>Personal</h3>
+                <input type="text" placeholder="Full Name">
+                <input type="number" placeholder="Age">
+                <input type="date" placeholder="Birthday">
+                <label for="status">Select Status:</label>
+                <select name="status" id="">
+                    <option value="" id="selectone">Please Select One</option>
+                    <option value="">Employee</option>
+                    <option value="">Human Resource Department</option>
+                    <option value="">Looking for Career</option>
+                </select>
+                <input type="submit" value="Sign-up">
+            </form>
+            <a href="login.html"><button type="button" id="cancel-btn">Cancel</button></a>
+        </div>
+    </div>
+</body>
+</html>

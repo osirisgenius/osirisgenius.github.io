@@ -6,6 +6,12 @@ body,html{
 }
 a,a:visited{
     text-decoration: none;
+    color: rgb(16, 16, 182);
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
 }
 
 .main{
@@ -45,12 +51,12 @@ h3{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50.05%,-50.05%);
     /*size*/
     width: 25%; /* for mobile* calc(100vw - 80px);*/
     height: 75% ;   /* calc(100vh - 80px)*/
     padding: 40px;
-    border-radius: 30px;
+    box-shadow: 0px 0px 20px 1px #050505;
 
 
     /*design*/
@@ -59,21 +65,30 @@ h3{
 }
 
 form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
 
+form a{
+    font-size: 0.8rem;
+}
+
+p{
+    font-size: 0.9rem;
 }
 
 input{
     /*spacing*/
-    margin: 5px ;
+    width: 65%;
+    margin: 20px auto ;
     padding: 10px 20px  ;
     display: block;
     position: relative;
     text-align: center;
     
-    width: 65%;
+
     border-radius: 50px;
     border: 1px solid black;
 }
@@ -83,21 +98,19 @@ input:focus{
 }
 
 input[type=checkbox]{
-    display: unset; 
-    position: absolute;
-    bottom: 33%;
-    
+    display: inline; 
+    width: auto;
+    margin: 0;
 }
 
 input[type=submit]{
-    width: 65%;
+    margin:30px auto 10px auto;
     cursor: pointer;
     font-size: 0.9rem;
     background-color: #00ff15;
     border: unset;
-    box-shadow: 1px 2px 3px 1px #474747;
-    text-transform: uppercase;
     color: white;
+    box-shadow: 1px 2px 3px 1px #474747;
     text-shadow: 2px 2px 8px #FF0000;
 }
 
@@ -105,16 +118,85 @@ input[type=submit]{
     width: 50%;
 }
 
-span{
-    margin: 20px 0px;
+
+/*sign-up modification*/
+
+.th2 {
+    padding: 0;
+    margin: 0 0 10px;
 }
 
 
-.container-2{
+/*******SELECT*******/
+
+select{
+    padding: 10px;
+    border-radius: 100px;
+    color: rgb(107, 107, 107);
+}
+
+select:focus{
+    outline-style: none;
+}
+
+#cancel-btn{
     display: none;
 }
 
-#sign-me{
-    cursor: pointer;
-    color: blue;
+
+#selectone{
+    color: rgb(131, 131, 131);
+}
+
+/************************LOGIN MEDIA QUERIES*********************/
+
+
+
+@media  (max-width:478px){
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size:0.9rem;
+    }
+
+    .container-1,.container-2{
+
+        /*size*/
+        width:calc(100vw - 80px);
+        height:calc(100vh - 80px);
+    }
+
+    #cancel-btn{
+        display: inline;
+
+        border: unset;
+        border-radius: 100px;
+        padding: 10px 50px;
+        margin-top: 15px;
+        /*design*/
+        color: white;
+        font-size: 0.85rem;
+        background-color: red;
+    }
+
+    input{
+        margin: 10px auto ;
+        padding: 1.5vh 10vw;
+    }
+
+    .companyname img{
+        width: 70%;
+    }
+}
+
+
+@media (min-width:479px) and (max-width:768px){
+
+}
+
+/*DESKTOP DEVICES*/
+@media (min-width:767px){
+
 }
