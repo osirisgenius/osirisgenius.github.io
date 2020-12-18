@@ -10,6 +10,9 @@
 </head>
 <body>
       <div class="navmenu">
+        <div class="company-logo">
+          <img src="/img/icon.png" alt="company.jpg">
+        </div>
           <div class="nav-logo">
             <h1>Compuware</h1>
           </div>
@@ -148,7 +151,7 @@
                 </div>
               </div>   
           
-              <div class="timeline-item">
+              <div class="timeline-item timehide">
           
                 <div class="timeline-img"></div>
           
@@ -160,7 +163,7 @@
                 </div>
               </div>   
           
-              <div class="timeline-item">
+              <div class="timeline-item timehide">
           
                 <div class="timeline-img"></div>
           
@@ -175,9 +178,12 @@
               </div>      
             </div>
           </section>
-              <div class="milestone-seemore">
-                 <button type="button"> View Full Timeline </button>
+              <div class="milestone-show">
+                 <button type="button" class="btn-time"> Show Full Timeline </button>
               </div>
+              <div class="milestone-hide">
+                <button type="button" class="btn-time"> Hide </button>
+             </div>
             </div>
             <hr>
             <div class="m-title careers-tab">
@@ -192,10 +198,39 @@
                 <h1>Contacts</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum praesentium ducimus exercitationem nam error eveniet dicta rerum debitis, voluptatem aut harum quos qui architecto laudantium numquam, ullam, dolores mollitia quibusdam?</p>
               </div>
+              <div class="display-contacts">
+                <div class="contact-content">
+                  <table>
+                    <tr>
+                      <th>Email Adrress</th>
+                      <td>Compuwaretaoyuan@compuware.com</td>
+                    </tr>
+                    <tr>
+                      <th>Contact Number</th>
+                      <td>+886 928656493</td>
+                    </tr>
+                    <tr>
+                      <th>Other Contact</th>
+                      <td>Lorem Ipsum</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="contact-content">
+                  <a><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00ODMuNzM4MjgxIDBoLTQ1NS41Yy0xNS41OTc2NTYuMDA3ODEyNS0yOC4yNDIxODcyNSAxMi42NjAxNTYtMjguMjM4MjgxIDI4LjI2MTcxOXY0NTUuNWMuMDA3ODEyNSAxNS41OTc2NTYgMTIuNjYwMTU2IDI4LjI0MjE4NyAyOC4yNjE3MTkgMjguMjM4MjgxaDQ1NS40NzY1NjJjMTUuNjA1NDY5LjAwMzkwNiAyOC4yNTc4MTMtMTIuNjQ0NTMxIDI4LjI2MTcxOS0yOC4yNSAwLS4wMDM5MDYgMC0uMDA3ODEyIDAtLjAxMTcxOXYtNDU1LjVjLS4wMDc4MTItMTUuNTk3NjU2LTEyLjY2MDE1Ni0yOC4yNDIxODcyNS0yOC4yNjE3MTktMjguMjM4Mjgxem0wIDAiIGZpbGw9IiM0MjY3YjIiLz48cGF0aCBkPSJtMzUzLjUgNTEydi0xOThoNjYuNzVsMTAtNzcuNWgtNzYuNzV2LTQ5LjM1OTM3NWMwLTIyLjM4NjcxOSA2LjIxNDg0NC0zNy42NDA2MjUgMzguMzE2NDA2LTM3LjY0MDYyNWg0MC42ODM1OTR2LTY5LjEyODkwNmMtNy4wNzgxMjUtLjk0MTQwNi0zMS4zNjMyODEtMy4wNDY4NzUtNTkuNjIxMDk0LTMuMDQ2ODc1LTU5IDAtOTkuMzc4OTA2IDM2LTk5LjM3ODkwNiAxMDIuMTQwNjI1djU3LjAzNTE1NmgtNjYuNXY3Ny41aDY2LjV2MTk4em0wIDAiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" />  https://www.facebook.com/compuwaretech</a>
+                  <a><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQxMC4xNTUgNDEwLjE1NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDEwLjE1NSA0MTAuMTU1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBzdHlsZT0iZmlsbDojNzZBOUVBOyIgZD0iTTQwMy42MzIsNzQuMThjLTkuMTEzLDQuMDQxLTE4LjU3Myw3LjIyOS0yOC4yOCw5LjUzN2MxMC42OTYtMTAuMTY0LDE4LjczOC0yMi44NzcsMjMuMjc1LTM3LjA2Nw0KCWwwLDBjMS4yOTUtNC4wNTEtMy4xMDUtNy41NTQtNi43NjMtNS4zODVsMCwwYy0xMy41MDQsOC4wMS0yOC4wNSwxNC4wMTktNDMuMjM1LDE3Ljg2MmMtMC44ODEsMC4yMjMtMS43OSwwLjMzNi0yLjcwMiwwLjMzNg0KCWMtMi43NjYsMC01LjQ1NS0xLjAyNy03LjU3LTIuODkxYy0xNi4xNTYtMTQuMjM5LTM2LjkzNS0yMi4wODEtNTguNTA4LTIyLjA4MWMtOS4zMzUsMC0xOC43NiwxLjQ1NS0yOC4wMTQsNC4zMjUNCgljLTI4LjY3Miw4Ljg5My01MC43OTUsMzIuNTQ0LTU3LjczNiw2MS43MjRjLTIuNjA0LDEwLjk0NS0zLjMwOSwyMS45LTIuMDk3LDMyLjU2YzAuMTM5LDEuMjI1LTAuNDQsMi4wOC0wLjc5NywyLjQ4MQ0KCWMtMC42MjcsMC43MDMtMS41MTYsMS4xMDYtMi40MzksMS4xMDZjLTAuMTAzLDAtMC4yMDktMC4wMDUtMC4zMTQtMC4wMTVjLTYyLjc2Mi01LjgzMS0xMTkuMzU4LTM2LjA2OC0xNTkuMzYzLTg1LjE0bDAsMA0KCWMtMi4wNC0yLjUwMy01Ljk1Mi0yLjE5Ni03LjU3OCwwLjU5M2wwLDBDMTMuNjc3LDY1LjU2NSw5LjUzNyw4MC45MzcsOS41MzcsOTYuNTc5YzAsMjMuOTcyLDkuNjMxLDQ2LjU2MywyNi4zNiw2My4wMzINCgljLTcuMDM1LTEuNjY4LTEzLjg0NC00LjI5NS0yMC4xNjktNy44MDhsMCwwYy0zLjA2LTEuNy02LjgyNSwwLjQ4NS02Ljg2OCwzLjk4NWwwLDBjLTAuNDM4LDM1LjYxMiwyMC40MTIsNjcuMyw1MS42NDYsODEuNTY5DQoJYy0wLjYyOSwwLjAxNS0xLjI1OCwwLjAyMi0xLjg4OCwwLjAyMmMtNC45NTEsMC05Ljk2NC0wLjQ3OC0xNC44OTgtMS40MjFsMCwwYy0zLjQ0Ni0wLjY1OC02LjM0MSwyLjYxMS01LjI3MSw1Ljk1MmwwLDANCgljMTAuMTM4LDMxLjY1MSwzNy4zOSw1NC45ODEsNzAuMDAyLDYwLjI3OGMtMjcuMDY2LDE4LjE2OS01OC41ODUsMjcuNzUzLTkxLjM5LDI3Ljc1M2wtMTAuMjI3LTAuMDA2DQoJYy0zLjE1MSwwLTUuODE2LDIuMDU0LTYuNjE5LDUuMTA2Yy0wLjc5MSwzLjAwNiwwLjY2Niw2LjE3NywzLjM1Myw3Ljc0YzM2Ljk2NiwyMS41MTMsNzkuMTMxLDMyLjg4MywxMjEuOTU1LDMyLjg4Mw0KCWMzNy40ODUsMCw3Mi41NDktNy40MzksMTA0LjIxOS0yMi4xMDljMjkuMDMzLTEzLjQ0OSw1NC42ODktMzIuNjc0LDc2LjI1NS01Ny4xNDFjMjAuMDktMjIuNzkyLDM1LjgtNDkuMTAzLDQ2LjY5Mi03OC4yMDENCgljMTAuMzgzLTI3LjczNywxNS44NzEtNTcuMzMzLDE1Ljg3MS04NS41ODl2LTEuMzQ2Yy0wLjAwMS00LjUzNywyLjA1MS04LjgwNiw1LjYzMS0xMS43MTJjMTMuNTg1LTExLjAzLDI1LjQxNS0yNC4wMTQsMzUuMTYtMzguNTkxDQoJbDAsMEM0MTEuOTI0LDc3LjEyNiw0MDcuODY2LDcyLjMwMiw0MDMuNjMyLDc0LjE4TDQwMy42MzIsNzQuMTh6Ii8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" /> https://www.twitter.com/compuwaretech</p>
+                  <a><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDM4MiAzODIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4MiAzODI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiMwMDc3Qjc7IiBkPSJNMzQ3LjQ0NSwwSDM0LjU1NUMxNS40NzEsMCwwLDE1LjQ3MSwwLDM0LjU1NXYzMTIuODg5QzAsMzY2LjUyOSwxNS40NzEsMzgyLDM0LjU1NSwzODJoMzEyLjg4OQ0KCUMzNjYuNTI5LDM4MiwzODIsMzY2LjUyOSwzODIsMzQ3LjQ0NFYzNC41NTVDMzgyLDE1LjQ3MSwzNjYuNTI5LDAsMzQ3LjQ0NSwweiBNMTE4LjIwNywzMjkuODQ0YzAsNS41NTQtNC41MDIsMTAuMDU2LTEwLjA1NiwxMC4wNTYNCglINjUuMzQ1Yy01LjU1NCwwLTEwLjA1Ni00LjUwMi0xMC4wNTYtMTAuMDU2VjE1MC40MDNjMC01LjU1NCw0LjUwMi0xMC4wNTYsMTAuMDU2LTEwLjA1Nmg0Mi44MDYNCgljNS41NTQsMCwxMC4wNTYsNC41MDIsMTAuMDU2LDEwLjA1NlYzMjkuODQ0eiBNODYuNzQ4LDEyMy40MzJjLTIyLjQ1OSwwLTQwLjY2Ni0xOC4yMDctNDAuNjY2LTQwLjY2NlM2NC4yODksNDIuMSw4Ni43NDgsNDIuMQ0KCXM0MC42NjYsMTguMjA3LDQwLjY2Niw0MC42NjZTMTA5LjIwOCwxMjMuNDMyLDg2Ljc0OCwxMjMuNDMyeiBNMzQxLjkxLDMzMC42NTRjMCw1LjEwNi00LjE0LDkuMjQ2LTkuMjQ2LDkuMjQ2SDI4Ni43Mw0KCWMtNS4xMDYsMC05LjI0Ni00LjE0LTkuMjQ2LTkuMjQ2di04NC4xNjhjMC0xMi41NTYsMy42ODMtNTUuMDIxLTMyLjgxMy01NS4wMjFjLTI4LjMwOSwwLTM0LjA1MSwyOS4wNjYtMzUuMjA0LDQyLjExdjk3LjA3OQ0KCWMwLDUuMTA2LTQuMTM5LDkuMjQ2LTkuMjQ2LDkuMjQ2aC00NC40MjZjLTUuMTA2LDAtOS4yNDYtNC4xNC05LjI0Ni05LjI0NlYxNDkuNTkzYzAtNS4xMDYsNC4xNC05LjI0Niw5LjI0Ni05LjI0Nmg0NC40MjYNCgljNS4xMDYsMCw5LjI0Niw0LjE0LDkuMjQ2LDkuMjQ2djE1LjY1NWMxMC40OTctMTUuNzUzLDI2LjA5Ny0yNy45MTIsNTkuMzEyLTI3LjkxMmM3My41NTIsMCw3My4xMzEsNjguNzE2LDczLjEzMSwxMDYuNDcyDQoJTDM0MS45MSwzMzAuNjU0TDM0MS45MSwzMzAuNjU0eiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /> https://www.linkedin.com/compuwaretech</p>
+                </div>
+                <div class="contact-content">
+                  <a>Taoyuan, Taiwan</a>
+                  <a>Taipei, Taiwan</a>
+                  <a>Sydney, Australla</a>
+                </div>
+              </div>
             </div>
           </div>
         </div><!-- End of Container-->
     </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
   <script src="./js/index.js"></script>

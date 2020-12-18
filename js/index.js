@@ -134,3 +134,20 @@ $(function(){
   
   });
   
+//*****TIMELINE SHOW AND HIDE ********/
+
+  $(document).ready(function() {
+    $(".milestone-show").click(function () {
+    $(".timehide").show()
+    $(".milestone-show").hide()
+    $(".milestone-hide").show()
+ });
+ });
+
+ $(document).ready(function() {
+  $(".milestone-hide").click(function () {
+  $(".timehide").hide()
+  $(".milestone-show").show()
+  $(".milestone-hide").hide()
+});
+});

@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0px 5vw;
     position: fixed;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr 1fr 1fr;
     align-items: center;
 
     /*DESIGN*/
@@ -54,6 +54,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*NAVBAR LOGO*/
+.company-logo img{
+  width: 100%;
+  margin-left: 20px;
+}
+
 .navmenu .nav-logo{
     margin-left: 3vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -368,6 +373,10 @@ h1,h2,h3,h4,h5,h6{
 
 /*****************************TIMELINE OR MILESTONE *********************************************************************************************************************************************/
 
+
+.timehide{
+  display: none;
+}
 .timeline-text {
   text-align: center;
 }
@@ -567,17 +576,31 @@ display: grid;
   right: 0;
 }
 
-.milestone-seemore{
+.milestone-show,.milestone-hide{
     border: none;
 }
 
-.milestone-seemore button{
+.milestone-show button{
     border: 0px solid;
-    background-color: #3F51B5;
+    background-color: #0d017c;
     color: white;
     padding: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+    box-shadow: 1px 1px 5px 1px #4d4d4d;
+}
+
+.milestone-hide{
+  display: none;
+}
+.milestone-hide button{
+  border: 0px solid;
+  background-color: #fd2727;
+  color: white;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 1px #4d4d4d;
 }
 
 
@@ -591,3 +614,36 @@ display: grid;
 
 }
 
+
+/*************************************CONTACTS***********************************/
+
+.contact-tab{
+  background-color: #333333;
+  color: white;
+}
+
+.display-contacts{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.contact-content{
+  text-align: left;
+
+}
+
+.contact-content a{
+  width: auto;
+  height: 18px;
+  display: block;
+  margin: 15px;
+
+}
+
+.contact-content a img{
+  width: 15px;
+  height: 18px;
+  transform: translate(0, 4px);
+}
