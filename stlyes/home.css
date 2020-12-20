@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6{
 /**********************************************MAIN NAVBAR MENU*********************************************************************************************************************************/
 .navmenu{
     /*POSITIONING*/
-    margin: 0px 5vw;
+    margin: 0 5vw;
     position: fixed;
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr;
@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5,h6{
 .navmenu .nav-logo{
     margin-left: 3vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
     letter-spacing: 10px;
 }
@@ -80,7 +80,7 @@ h1,h2,h3,h4,h5,h6{
 /*ICON ALIGNMENT*/
 
 .navmenu .navigation li{
-    margin: 0 10px;
+    margin: 0 5px;
     padding: 15px 10px;
 }
 
@@ -282,9 +282,10 @@ h1,h2,h3,h4,h5,h6{
 /********************************PRODUCTS***************************************************************************************************************************************************/
 
 .product-intro{
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    display: grid;
-    justify-items: center;
+    align-items: center;
 }
 
 .product-text{
@@ -305,10 +306,12 @@ h1,h2,h3,h4,h5,h6{
 /* PRODUCTS SAMPLE*/
 
 .product-sample {
-    margin-bottom: 50px;
+    margin: 0px auto 8vh;
+    padding: 0;
     display: grid;
-    grid-template-columns: 240px 240px 240px 240px;
-    grid-template-rows: 280px 270px;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 260px 280px;
+    grid-gap: 10px;
     text-align: center;
 }
 /*  PRODUCT SAMPLE CONTAINER*/
@@ -317,8 +320,8 @@ h1,h2,h3,h4,h5,h6{
     flex-direction: column;
 
     border: 1px solid rgb(73, 73, 73);
-    width: 230px;
-    height: 210px;
+    width: 200px;
+    height: 190px;
     overflow: hidden;
 }
 /* PRODUCT SAMPLE IMAGE*/
@@ -328,13 +331,19 @@ h1,h2,h3,h4,h5,h6{
 
 .product-sample li span{
     display: none;
-}   
+}
+
+.product-sample img, .product-sample a{
+  height: 192px;
+}
 
 .product-sample li a:hover > span{
-    display: inline-block;
+    display: inline;
     position: absolute;
+    transform: translate(-50%,-300%);
     padding: 5px;
-    transform: translate(-200px, 90px);
+
+    /*design*/
     color: white;
     font-weight: 700;
     font-size: 1.1rem;
@@ -345,10 +354,10 @@ h1,h2,h3,h4,h5,h6{
 .product-sample li p{
     position: absolute;
     margin: 0;
-    width: 212px;
+    width: 182px;
     height: 50px;
     padding: 10px;
-    transform: translate(-1px,0px);
+    transform: translate(-1px,-8px);
 
     font-weight: 700;
     font-family:'Poppins', sans-serif;
@@ -363,11 +372,11 @@ h1,h2,h3,h4,h5,h6{
 
 /* SHOW ALL PRODUCT NTH CHILD 8 */
 .product-sample li:nth-child(8){
-    border:unset;
+  border: 1px solid white;
 }
 
 .product-sample li:nth-child(8) img{
-    width: 87%;
+    width: 201px;
     opacity: 1;
 }
 
@@ -607,6 +616,8 @@ display: grid;
 /************************************CAREERS************************************/
 
 .m-title{
+  width: auto;
+  margin: auto;
   padding: 20px 50px;
   text-align: center;
   background-color: white;
@@ -627,23 +638,29 @@ display: grid;
   justify-content: space-around;
   align-items: center;
   font-size: 0.8rem;
+
 }
 
 .contact-content{
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: -3%;
 
 }
-.contact-content a{
+
+.contact-content a, .contact-content p{
   color: white;
-}
-
-.contact-content a,tr{
-  width: auto;
-  height: 18px;
-  display: block;
   margin: 15px;
-
 }
+
+.contact-content span{
+  font-weight: 700;
+  margin: 15px;
+}
+
 
 .contact-content img{
   width: 15px;
@@ -651,7 +668,6 @@ display: grid;
   transform: translate(-5px, 5px);
 }
 
-th{
-  width: 130px;
+.display-contacts hr{
+  display: none;
 }
-

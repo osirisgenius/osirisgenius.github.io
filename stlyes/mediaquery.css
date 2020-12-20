@@ -1,6 +1,6 @@
 
-/* SMALL DEVICES*/
-@media (max-width:480px){
+/* EXTRA SMALL & SMALL DEVICES*/
+@media (max-width:768px){
     
     body{
         background-image:linear-gradient(to right, rgba(255, 255, 255, 0.65), rgb(248, 248, 248)), url(/img/comp.jpg);
@@ -27,6 +27,10 @@
     .navmenu .nav-logo h1{
     font-size: 1.7rem;
     letter-spacing: 6px;
+    }
+
+    .navmenu .company-logo{
+        display: none;
     }
 
     /*NAVIGATION*/
@@ -214,7 +218,6 @@
         padding: 0;
         grid-template-rows: 190px 190px 190px 190px;
         grid-template-columns: 45vw 45vw;
-
     }
     
 
@@ -230,18 +233,23 @@
     }
 
     .product-sample li p{
-        width: 40vw;
+        width: calc(40vw + 2px);
         padding: 10px 0px;
         height: auto;
         font-size: 0.8rem;
-        transform: translate(-1px,-3px);
+        transform: translate(-1px,-6px);
     }
 
     .product-sample li a:hover > span{
         display: none;
     }
+
+    .product-sample li:nth-child(8) img{
+        width: 87%;
+    }
+
      /* END OF PRODUCT DISPLAY*/   
-    /*START OF TIMELINE*/
+    /************************************START OF TIMELINE*******************/
     .milestone .timeline::before {
         left: 50px;
       }
@@ -273,16 +281,65 @@
           padding: 0;
       }
 
+      /*****************************CONTACTS****************************************/
+      .m-title{
+          padding: 20px 20px;
+      }
+
+      .display-contacts{
+          flex-direction: column;
+      }
+
+      .display-contacts hr{
+        display: block;
+        width: 85%;
+        border: 1px solid rgb(163, 163, 163);
+    }
+
+      .contact-content{
+        position: unset;
+      }
+
+      .contact-content a, .contact-content p{
+        color: white;
+        margin: 5px;
+      }
 }
 
 
-/*TABLET DEVICES*/
-@media (min-width:479px) and (max-width:768px){
+/*MEDIUM DEVICES*/
+@media (min-width:576px) and (max-width:768px){
+    .product-sample{
+        grid-template-columns: 30vw 30vw;
+    }
 
+    .product-sample li{
+
+        width: 30vw;
+        height: 120px;
+
+    }
+
+    .product-sample li img{
+        width: 30vw;
+    }
+
+    .product-sample li p{
+        width: calc(30vw + 2px);
+    }
+    /*Contacts*/
+    .display-contacts a,th,td{
+        font-size: 1rem;
+    }
+}
+/*LARGE DEVICES*/
+@media (min-width:769px)and (max-width:1200px){
+    .navmenu .menu-bar i{
+        display: none;
+    }
 }
 
-/*DESKTOP DEVICES*/
-@media (min-width:767px){
+@media (min-width:1200px){
     .navmenu .menu-bar i{
         display: none;
     }
