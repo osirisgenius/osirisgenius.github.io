@@ -633,8 +633,11 @@ display: grid;
   text-align: left;
 
 }
-
 .contact-content a{
+  color: white;
+}
+
+.contact-content a,tr{
   width: auto;
   height: 18px;
   display: block;
@@ -642,8 +645,13 @@ display: grid;
 
 }
 
-.contact-content a img{
+.contact-content img{
   width: 15px;
   height: 18px;
-  transform: translate(0, 4px);
+  transform: translate(-5px, 5px);
 }
+
+th{
+  width: 130px;
+}
+
