@@ -175,7 +175,8 @@ button:focus{
     /*position and properties*/
     display: flex;
     flex-direction: column;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(107, 107, 107);
 }
 
 /******WELCOME MESSAGE******/ 
@@ -653,7 +654,7 @@ display: grid;
   row-gap: 10px;
   /*design*/
   box-shadow: var(--btnshad);
-  background-color: rgb(184, 184, 184); 
+  background-color: rgb(221, 221, 221); 
 }
 
 .job {
