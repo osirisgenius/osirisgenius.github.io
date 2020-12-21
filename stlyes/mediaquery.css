@@ -280,13 +280,30 @@
           margin: 0;
           padding: 0;
       }
+
+      .timeline-item{
+        font-size: 0.8rem;
+      }
       /****************************CAREER********************************/
       .job{
-          
+        grid-auto-flow: row;
+        grid-template-columns: unset;
+        grid-template-rows: 20% 65% 15%;
+        font-size: 0.75rem;
+        line-height: 20px;
+      }
+
+      .apply-btn{
+        padding: 2.5% 5%;
+      }
+
+      .job-description ul{
+
       }
       /*****************************CONTACTS****************************************/
       .m-title{
           padding: 20px 20px;
+
       }
 
       .display-contacts{
@@ -304,6 +321,7 @@
       }
 
       .contact-content a, .contact-content p{
+          font-size: 0.7rem;
         color: white;
         margin: 5px;
       }
