@@ -348,8 +348,15 @@
     .product-sample li p{
         width: calc(30vw + 2px);
     }
+
+    /*Careers*/
+
+    .job-description  ul{
+        font-size: 1rem;
+        line-height: 250%;
+    }
     /*Contacts*/
-    .display-contacts a,th,td{
+    .display-contacts a, .display-contacts p, .display-contacts span{
         font-size: 1rem;
     }
 }
@@ -357,6 +364,15 @@
 @media (min-width:769px)and (max-width:1200px){
     .navmenu .menu-bar i{
         display: none;
+    }
+
+    .navmenu .navigation{
+    margin: 5px 0px;
+    }
+
+    .navmenu .navigation li a{
+        font-size: 0.85rem;
+        padding: 5px 0px;
     }
 }
 

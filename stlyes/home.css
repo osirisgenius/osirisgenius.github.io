@@ -667,6 +667,7 @@ display: grid;
 
   /*spacing*/
   padding: 2%;
+  line-height: 225%;
   /*design*/
   background-color: white;
   border: 1px solid grey;
