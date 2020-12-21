@@ -21,6 +21,7 @@ a,a:visited{
     text-decoration: none;
     cursor: pointer;
 }
+
 i{
     cursor: pointer;    
 }
@@ -165,7 +166,7 @@ button:focus{
 /******HOME******/
 .main-intro{
     /*BACKGROUND*/
-    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.849), rgb(248, 248, 248)), url(/img/comp.jpg);
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.91), rgb(248, 248, 248)), url(/img/comp.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,6 +175,7 @@ button:focus{
     /*position and properties*/
     display: flex;
     flex-direction: column;
+    color: black;
 }
 
 /******WELCOME MESSAGE******/ 
@@ -636,10 +638,14 @@ display: grid;
   font-family: 'Poppins', sans-serif;
 }
 
-.hiring{
-  display: grid;
+.careers-tab{
+  height: 100vh;
 }
 
+.hiring{
+  background-color: rgb(104, 104, 104);
+  padding: 20px;
+}
 .job {
   display: grid;
   grid-auto-flow: column;
@@ -650,6 +656,7 @@ display: grid;
 
   border: 1px solid grey;
   border-bottom: 10px solid rgb(54, 54, 54);
+  border-right: 10px solid rgb(54, 54, 54);
 }
 
 .job-title{
