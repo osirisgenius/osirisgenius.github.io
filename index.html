@@ -10,76 +10,38 @@
 </head>
 <body>
       <div class="navmenu">
-        <div class="company-logo">
-          <img src="/img/icon.png" alt="">
-        </div>
-          <ul class="navigation hide">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#product-list">Products<i class="fa fa-caret-down" id="caretIcon"></i></a></li>
-            <div class="nav-logo"><h1>Compuware</h1></div>
-            <li id="compshow"><a>Company<i class="fa fa-caret-down" id="caretIcon"></i></a>
-              <ul class="comp-side hide" id="compsubnav">
-                <li><a href="#company-milestone">Milestone</a></li>
-                <li><a href="#">Global Location</a></li>
-                <li><a href="#career">Career</a></li>
-              </ul>
-            </li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
-          <div class="someicons">
-              <div class="menu-bar" id="iconTrigger">
-                <i class="fa fa-bars fa-2x" id="iconBar"></i>
-            </div>
-            <div>
-                <i class="fa fa-globe fa-2x"></i><i class="fa fa-caret-down" id="caretIcon"></i>
-            </div>
-          </div>
+        <ul class="navbar">
+          <li><a href="#home"><img src="/img/navmenu icons/house.png" alt="home.png"><span>HOME</span></a></li>
+          <li><a href=""><img src="/img/navmenu icons/box.png" alt="products.png"><span>PRODUCTS</span></a></li>
+          <li><a href=""><img src="/img/navmenu icons/contact.png" alt="products.png"><span>CONTACTS</span></a></li>
+          <li><a href=""><img src="/img/navmenu icons/enterprise.png" alt="products.png"><span>COMPANY</span></a></li>
+        </ul>
       </div>
       <div class="container">
         <!-- FIRST PAGE or LANDING PAGE-->
             <!-- WELCOME MESSAGE-->
-            <div class="main-intro" >
+            <div class="main-intro" id="home" >
+                <div class="product-img">
+                  <img src="/img/product-check.png" alt="">
+                </div>
                 <div class="welcome-message">
-                    <h1>Welcome to <span>Compuware Technologies Inc.</span></h1>
+                    <h1>Welcome to </h1>
+                    <h1><span>Compuware Technologies Inc.</span></h1>
                     <p> We are a global leading company of <strong> Power Supply Design and Manufacturing.</strong> <br>We provide Quality Products and Services </p>
+                    <div class="front-buttons">
+                      <button type="button" class="contact-btn">Products</button>
+                      <button type="button" class="">Contact Us</button>
+                    </div>
                 </div>
             </div>
-            <hr>
             <div class="m-title aboutus-tab" >
                 <div class="company-profile">
-                <div class="advertisement">
-                    <div id="slideshow-example" data-component="slideshow">
-                        <div role="list">
-                            <div class="slide">
-                                <img src="/img/adv1.jpg" alt="product-1.png">
-                            </div>
-                            <div class="slide">
-                                <img src="/img/adv2.jpg" alt="product-2.png">
-                            </div>
-                            <div class="slide">
-                                <img src="/img/adv3.jpg" alt="product-3.png">
-                            </div>
-                        </div>
-                    </div>
-                          <h1>About Us</h1>
+                  <h1>About Us</h1>
                           <p>The company has dedicated in Technology Innovation, Green Environment, 
                           Module Structure, as its development cores. It has professional RD teams, 
                           high quality production capabilities, solutions for diversified requirements of power supplies.
                           It also provides competitive and extraordinary products, which makes it the most reliable partner for its customers and suppliers, and creates the best product competition for its customers.</p>
-                         <div class="envi-tech"><br>
-                            <h3>Compuware techonology</h3>
-                            <p>Compuware Technology continues to develop green power supplies with the most
-                            advanced technologies. It has aggressively introduced digital control design into its
-                            products structure, with higher than 96% Power Efficiency.
-                            <div class="hide-on-mobile"> It has accumulated long-term
-                            development technology for Power Supplies to more application areas, including Cloud
-                            Computing Servers, Networking Equipments, Industrial PCs, Blade Servers, NAS Storage
-                            Products, Telecommunication Products... ... those perspective products, and so on.</div>
-                        </p>
-                    </div>
-                    <div class="envi-tech-img"><img src="/img/rndtech.png" alt=""></div>
                 </div>
-              </div>
             </div>
         <hr>
         <!-- COMPANY PAGE-->
@@ -98,7 +60,16 @@
               <li><a href="#"><img src="/img/product-intro/acdc-dc.jpg" alt="ac-dc"><span>Open This Category</span><p>Dual Input <br>AC/DC to DC</p></a></li>
               <li><a href="#" id="company-milestone"><img src="/img/seemore.png" alt="show.product"><p>Show All<br> Products</p></a></li>
             </ul>
-        </div>
+          </div> 
+              <div class="envi-tech"><br>
+                <h3>Compuware techonology</h3>
+                <p>Compuware Technology continues to develop green power supplies with the most
+                advanced technologies. It has aggressively introduced digital control design into its
+                products structure, with higher than 96% Power Efficiency.
+                </p>
+              </div>
+            <div class="envi-tech-img"><img src="/img/rndtech.png" alt=""></div>
+      
         <hr>
         <!--TIMELINE START-->
         <div class="milestone" >
