@@ -118,10 +118,18 @@ button:focus{
 
 /*********************************MAIN CONTENT*******************************************************************************************************************************************/
 
+.comp-logo{
+  }
+
+.comp-logo img{
+  width: 15%;
+
+}
+
 /******HOME******/
 .main-intro{
     /*BACKGROUND*/
-    background-image:linear-gradient(to right, rgba(31, 31, 31, 0.301), rgba(0, 0, 0, 0.747)), url(/img/comp.jpg);
+    background-image:linear-gradient(to right, rgba(138, 138, 138, 0.301), rgba(44, 44, 44, 0.747)), url(/img/comp.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,13 +156,13 @@ button:focus{
 }
 
 .main-intro .welcome-message    {
-  font-size: 0.9rem;
+  font-size: 1vw;
   width: 40vw;
   text-align: center;
 }
 
 .main-intro span{
-  font-size: 4rem;
+  font-size: 3.8vw;
 }
 
 .front-buttons{
