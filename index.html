@@ -12,9 +12,10 @@
       <div class="navmenu">
         <ul class="navbar">
           <li><a href="#home"><img src="/img/navmenu icons/house.png" alt="home.png"><span>HOME</span></a></li>
-          <li><a href=""><img src="/img/navmenu icons/box.png" alt="products.png"><span>PRODUCTS</span></a></li>
-          <li><a href=""><img src="/img/navmenu icons/contact.png" alt="products.png"><span>CONTACTS</span></a></li>
-          <li><a href=""><img src="/img/navmenu icons/enterprise.png" alt="products.png"><span>COMPANY</span></a></li>
+          <li><a href="#productlist"><img src="/img/navmenu icons/box.png" alt="products.png"><span>PRODUCTS</span></a></li>
+          <li><a href=""><img src="/img/navmenu icons/contact.png" alt="contact.png"><span>CONTACTS</span></a></li>
+          <li><a href=""><img src="/img/navmenu icons/work.png" alt="work.png"><span>CAREER</span></a></li>
+          <li><a href=""><img src="/img/navmenu icons/enterprise.png" alt="company.png"><span>COMPANY</span></a></li>
         </ul>
       </div>
       <div class="container">
@@ -32,14 +33,15 @@
                     <h1><span>Compuware Technologies Inc.</span></h1>
                     <p> We are a global leading company of <strong> Power Supply Design and Manufacturing.</strong> <br>We provide Quality Products and Services </p>
                     <div class="front-buttons">
-                      <button type="button" class="contact-btn">Products</button>
-                      <button type="button" class="">Contact Us</button>
+                      <button type="button" class="products-btn">Products</button>
+                      <button type="button" class="contact-btn">Contact Us</button>
                     </div>
                 </div>
             </div>
+            <!-- About US -->
             <div class="m-title aboutus-tab" >
                 <div class="company-profile">
-                  <h1>About Us</h1>
+                  <h2>About Us</h2>
                           <p>The company has dedicated in Technology Innovation, Green Environment, 
                           Module Structure, as its development cores. It has professional RD teams, 
                           high quality production capabilities, solutions for diversified requirements of power supplies.
@@ -48,7 +50,7 @@
             </div>
         <hr>
         <!-- COMPANY PAGE-->
-        <div class="product-intro" id="product-list">
+        <div class="product-intro" id="productlist">
           <div class="m-title">
             <h1>Power Supply Products</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat tempora quisquam aperiam dolore unde cumque quibusdam hic distinctio, consequatur ad minima, consectetur mollitia quas deleniti numquam harum, quis cupiditate?</p>
@@ -63,16 +65,15 @@
               <li><a href="#"><img src="/img/product-intro/acdc-dc.jpg" alt="ac-dc"><span>Open This Category</span><p>Dual Input <br>AC/DC to DC</p></a></li>
               <li><a href="#" id="company-milestone"><img src="/img/seemore.png" alt="show.product"><p>Show All<br> Products</p></a></li>
             </ul>
+            <div class="envi-tech"><br>
+              <h3>Compuware techonology</h3>
+              <p>Compuware Technology continues to develop green power supplies with the most
+              advanced technologies. It has aggressively introduced digital control design into its
+              products structure, with higher than 96% Power Efficiency.
+              </p>
+              <div class="envi-tech-img"><img src="/img/rndtech.png" alt=""></div>
+            </div>
           </div> 
-              <div class="envi-tech"><br>
-                <h3>Compuware techonology</h3>
-                <p>Compuware Technology continues to develop green power supplies with the most
-                advanced technologies. It has aggressively introduced digital control design into its
-                products structure, with higher than 96% Power Efficiency.
-                </p>
-              </div>
-            <div class="envi-tech-img"><img src="/img/rndtech.png" alt=""></div>
-      
         <hr>
         <!--TIMELINE START-->
         <div class="milestone" >
@@ -158,65 +159,75 @@
             <div class="m-title careers-tab">
                 <div class="m-text" id="career">
                   <h1>Careers</h1>
-                  <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, est! Consequatur quia eum eligendi quas itaque est repellat iste labore, inventore cum, similique, ratione distinctio pariatur voluptates ea incidunt eveniet.</p>
+                  <p >Every day around the world, we work with exceptional people, the latest and greatest tech and leading companies across industries. At the heart of every great change is a great human. If you have ideas, ingenuity and a passion for making a difference, come and be a part of our team.</p>
               </div>
-              <div class="hiring">
-                <div class="job">
-                    <div class="job-title">
-                      <a href=""><h3>AOI Engineer</h3></a>
-                    </div>
-                    <div class="job-description">
-                      <ul>
-                        <li>1.) Responsible for Creating New AOI Programs for Qualification Run</li>
-                        <li>2.) Quarter Machine Maintenance</li>
-                        <li>3.) Improvement of AOI Detection</li>
-                        <li>4.) Provide AOI Machine Flow out and Teach Operator with new method </li>
-                      </ul>
-                    </div>
-                    <div class="apply-now">
-                      <a href="#"><button type="button" class="apply-btn"> Apply Now</button></a>
-                    </div>
-                </div>
-                <div class="job">
-                  <div class="job-title">
-                    <a href=""><h3>Production Supervisor</h3></a>
+                  <div class="job-container">
+                      <div class="job">
+                        <div class="job-title">
+                            <a href="">Engineering Manager</a> 
+                        </div>
+                        <p>Posted: <i>3days ago</i></p>
+                        <div class="job-details">
+                          <div class="job-salary">$30,000 - $40,000</div>
+                          <div class="apply-now"><a href="#">Apply Now</a></div>
+                        </div>
+                      </div>
+                      <div class="job">
+                        <div class="job-title">
+                          <a href="">AOI Engineer</a>
+                        </div>
+                        <p>Posted: <i>3days ago</i></p> 
+                        <div class="job-details">
+                          <div class="job-salary">$30,000 - $40,000</div>
+                          <div class="apply-now"><a href="#">Apply Now</a></div>
+                        </div>
+                      </div>
+                      <div class="job">
+                        <div class="job-title">
+                          <a href="">PPIC Manager</a> 
+                        </div>
+                        <p>Posted: <i>3days ago</i></p>
+                        <div class="job-details">
+                          <div class="job-salary">$30,000 - $40,000</div>
+                          <div class="apply-now"><a href="#">Apply Now</a></div>
+                        </div>
+                      </div>
+                      <div class="job">
+                        <div class="job-title">
+                          <a href="">Process Engineer</a> 
+                        </div>
+                        <p>Posted: <i>3days ago</i></p>
+                        <div class="job-details">
+                          <div class="job-salary">$30,000 - $40,000</div>
+                          <div class="apply-now"><a href="#">Apply Now</a></div>
+                        </div>
+                      </div>
+                      <div class="job">
+                        <div class="job-title">
+                          <a href="">Software Engineer</a>
+                        </div>
+                        <p>Posted: <i>3days ago</i></p> 
+                        <div class="job-details">
+                          <div class="job-salary">$30,000 - $40,000</div>
+                          <div class="apply-now"><a href="#">Apply Now</a></div>
+                        </div>
+                      </div>
+                      <div class="job">
+                        <div class="job-title">
+                          <a href="">Production Supervisor</a> 
+                        </div>
+                        <p>Posted: <i>3days ago</i></p>
+                        <div class="job-details">
+                          <div class="job-salary">$30,000 - $40,000</div>
+                          <div class="apply-now"><a href="#">Apply Now</a></div>
+                        </div>
+                      </div>
                   </div>
-                  <div class="job-description">
-                    <ul>
-                      <li>1.) Responsible for Creating New AOI Programs for Qualification Run</li>
-                      <li>2.) Quarter Machine Maintenance</li>
-                      <li>3.) Improvement of AOI Detection</li>
-                      <li>4.) Provide AOI Machine Flow out and Teach Operator with new method </li>
-                    </ul>
-                  </div>
-                  <div class="apply-now">
-                    <a href="#"><button type="button" class="apply-btn"> Apply Now</button></a>
-                  </div>
               </div>
-              <div class="job">
-                <div class="job-title">
-                  <a href="#"><h3>SMT Engineer</h3></a>
-                </div>
-                <div class="job-description">
-                  <ul>
-                    <li>1.) Responsible for Creating New AOI Programs for Qualification Run</li>
-                    <li>2.) Quarter Machine Maintenance</li>
-                    <li>3.) Improvement of AOI Detection</li>
-                    <li>4.) Provide AOI Machine Flow out and Teach Operator with new method </li>
-                  </ul>
-                </div>
-                <div class="apply-now">
-                  <a href="#"><button type="button" class="apply-btn">Apply Now</button></a>
-                </div>
-              </div>
-              </div>
-            </div>
-            <hr>
+        <hr>
+        <!-- Container END -->
         <!--CONTACTS-START-->
             <div class="m-title contact-tab">
-              <div class="m-text" id="contacts">
-                <h1>Contacts</h1>
-                </div>
               <div class="display-contacts">
                 <div class="contact-content">
 
