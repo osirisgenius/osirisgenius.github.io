@@ -46,7 +46,7 @@ $(function(){
       origin: 'left',
       distance: '300px',
       easing: 'ease-in-out',
-      duration: 800,
+      duration: 1000,
     });
 
     sr.reveal('.js--fadeInRight', {
@@ -58,30 +58,30 @@ $(function(){
 
     sr.reveal('.js--fadeInLeft1', {
           origin: 'left',
-          distance: '1000px',
+          distance: '1500px',
             easing: 'ease-in-out',
-          duration: 1500,
+          duration: 1200,
         });
 
     sr.reveal('.js--fadeInLeft2', {
           origin: 'left',
-          distance: '600px',
+          distance: '1000px',
             easing: 'ease-in-out',
-          duration: 2000,
+          duration: 1600,
     });
 
 
     sr.reveal('.js--fadeInLeft3', {
       origin: 'left',
-      distance: '300px',
+      distance: '800px',
         easing: 'ease-in-out',
-      duration: 3000,
+      duration: 2000,
     });
         sr.reveal('.js--fadeup', {
           origin: 'top',
           distance: '300px',
             easing: 'ease-in-out',
-          duration: 2000,
+          duration: 1000,
         });
 
         sr.reveal('.js--fadeDown', {
@@ -134,20 +134,12 @@ $(document).ready(function(){
 });
 
 //NAVMENU SCROLL
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-      $("menu-toggler").animate({backgroundColor: 'rgba(255,255,255,.9)'}, 1000);
-    }
-  });
-});
 
-
-$(document).ready(function(){
-    $(window).scroll(function() {
-      if ($(document).scrollTop() > 50) {
-    $(".cwhite").addClass("cblue");
-    $(".cwhite").removeClass(" cwhite");}
-  }
-  });
-});
+// $(document).ready(function(){
+//     $(window).scroll(function() {
+//       if ($(document).scrollTop() > 50) {
+//     $(".cwhite").addClass("cblue");
+//     $(".cwhite").removeClass(" cwhite");}
+//   }
+//   });
+// });
