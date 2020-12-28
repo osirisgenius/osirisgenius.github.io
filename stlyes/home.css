@@ -63,6 +63,10 @@ button:focus{
 
 /**********************************************MAIN NAVBAR MENU*********************************************************************************************************************************/
 
+.menu-toggler{
+  display: none;
+}
+
 .navmenu{
   /*positioning*/
   position: fixed;
@@ -101,7 +105,7 @@ button:focus{
 }
 
 /*TOOLTIP*/
-.navbar li a:hover > span {
+.navbar li:hover > span {
   display: inline-block;
   width: auto;
   padding: 10px;
@@ -109,7 +113,7 @@ button:focus{
   
 }
 
-.navbar li a span{
+.navbar li span{
   position: absolute;
   transform: translate(15%,0);
   color: white;

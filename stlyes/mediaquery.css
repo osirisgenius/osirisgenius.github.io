@@ -2,10 +2,6 @@
 /* EXTRA SMALL & SMALL DEVICES*/
 @media (max-width:768px){
     
-    body{
-        background-image:linear-gradient(to right, rgba(255, 255, 255, 0.65), rgb(248, 248, 248)), url(/img/comp.jpg);
-    }
-
     /*HIDE EVERYTHING ON MOBILE*/
     .hide-on-mobile{
         display: none;
@@ -16,178 +12,50 @@
         background-color: unset;
     }
 
-    /**** NAVIGATION START****/  
-    .navmenu{
-        margin: 0;
-        width: 100vw;
-        height: 68px;
+    /**** NAVMENU START****/  
+
+    .menu-toggler{
+        display: block;
+        position: fixed;
+        right: 30px;
+        top: 20px;
         z-index: 99;
     }
 
-    .navmenu .nav-logo h1{
-    font-size: 1.7rem;
-    letter-spacing: 6px;
-    }
-
-    .navmenu .company-logo{
-        display: none;
-    }
-
-    /*NAVIGATION*/
-    .navmenu .navigation{
-        /*Positioning of NAVMENU*/
-        position: absolute;
-        margin: 0;
-        top: 69px;
-        height: 100vh;
-        width: 100vw;
-        text-align: center;
-        transform: translate(0%,0%);
-
-        /*Template of NAVMENU*/
-        display: flex;
-        flex-direction: column;
-
-        /*NAVMENU Design*/
-        background-color: #153349;
-        border-radius: unset;
-        font-weight: unset;
-        font-size: 0.9rem;
-   
-
-        /*TRANSITION EFFECT*/
-        transition: max-height 0.7s ease-in-out;
-    }
-    /*Remove Desktop List Margin*/
-
-    .navmenu .navigation li{
-        margin: 0;
-        padding: 15px 0px ;
-        text-align: center;
-        width: 100vw;
-    }
-    /*CHANGE Anchor Tag and Icon Font color*/
-    .navmenu .navigation li a,.main .navmenu .navigation li i{
-        color: white;
-        padding: 0px;
-    }
-
-    /*LIST HOVER*/
-    .navmenu .navigation li:nth-child(-n + 5):hover{
-        background-color: #3e5770;
-        border-radius: 0px;
-    }
-
-    .navmenu .navigation li:hover > a{
-    color: white;
-    }
-    /*LIST HOVER END*/
-
-    .navmenu .menu-bar{
-       position: absolute;
-       right: 40px;
-    }
-    .navmenu .menu-bar i{
+    .cwhite{
         color: white;
     }
 
-    /* MENU HIDE/SHOW */
-    .navmenu .navigation.hide{
-        max-height:0px ;
+    .cblue{
+        color: var(--navblue);
     }
 
-    .navmenu .navigation.hide li{
-    display: none;
-    }
+    .navmenu{
+        /*positioning*/
+        right: 10px;
+        left: unset;
+        top: unset;
+        padding-top: 25px;
+        transform: translate(0,0);
+      
+        /*design*/
+        background-color: rgba(255, 255, 255, 0.596);
+        z-index: 98;
+      }
 
-
-
-    /***COMPANY SUB BAR***/
-
-    .comp-side.show{
-        /*POSITIONING*/
-        margin: 0;
-        padding: 0;
-        position: relative;
-        transform: translate(0, 16px);
-        text-align: center;
-        
-        /*DESIGN*/
-        background-color: #000000a4;
-        border-radius: 0px;
-
-    
-        /*SHOW*/
-        width: 100vw;
-        height: 168px;
-        transition: height 0.5s ease-in-out;
-    }
-    .comp-side.hide{
-        height: 0px;
-
-    }
-    .comp-side.hide li{
+      .navbar{
         display: none;
-    }
+      }
 
 
     /**** NAVIGATION END****/  
 /********************************* MAIN INTRO START **************************/
     .main-intro{
-        background-image: unset;
-    }
-    
-    .main-intro .company-profile{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-intro .company-profile .about-us{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main-intro .company-profile .about-us h3{
-    margin: 10px 0px;
-    }
-    .main-intro .company-profile .image-about img {
-        position: relative;
-        width: 90vw;
-        border-radius: 0px;
-    }
-
-    /*HIDE ABOUT US LINE*/
-    .main-intro .company-profile .image-about h4::before,.main-intro .company-profile .image-about h4::after{
-        display: none;
-    }
-
-    /*ABOUT US TEXT*/
-    .main-intro .company-profile .about-us-text{
-        margin: 0;
-    }
-
-    .main-intro .company-profile .about-us-text p{
-        margin: 15px 10px;
+        height: 85vh;
     }
 
     /*ADVERTISEMENT START*/
-    .advertisement{ 
-        margin-top: 1vh;
-        text-align: center;
-        grid-template-rows: 140px 1fr auto;
-    }
 
-    .advertisement #slideshow-example img{
-        width: 95%;
-    }
-    .advertisement .envi-tech{
-        width: 95%;
-    }
-    .advertisement .envi-tech-img img{
-        width: 70%;
-    }
     /*END OF INTRO*/
     /**************************** PRODUCT ***********************
     /*START OF PRODUCT DISPLAY*/
@@ -202,15 +70,7 @@
     .product-text{
         font-size: 0.8rem;
     }
-    .product-text::before,.product-text::after{
-        display: none;
-    }
 
-    .desc{
-        text-align: center;
-        font-size: 0.85rem;
-        margin: 15px;
-    }
 
     .product-sample{
         justify-items: center;
@@ -220,7 +80,6 @@
         grid-template-columns: 45vw 45vw;
     }
     
-
     .product-sample li{
 
         width: 40vw;
@@ -285,12 +144,9 @@
         font-size: 0.8rem;
       }
       /****************************CAREER********************************/
-      .job{
-        grid-auto-flow: row;
-        grid-template-columns: unset;
-        grid-template-rows: 20% 65% 15%;
-        font-size: 0.75rem;
-        line-height: 20px;
+      .job-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
       }
 
       .apply-btn{
@@ -300,6 +156,7 @@
       /*****************************CONTACTS****************************************/
       .m-title{
           padding: 20px 20px;
+          font-size: 0.85rem;
 
       }
 
