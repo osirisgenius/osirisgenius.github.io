@@ -16,16 +16,17 @@
         <ul class="navbar">
           <li><a href="#home"><img src="/img/navmenu icons/house.png" alt="home.png"></a><span>HOME</span></li>
           <li><a href="#productlist"><img src="/img/navmenu icons/box.png" alt="products.png"></a><span>PRODUCTS</span></li>
-          <li><a href=""><img src="/img/navmenu icons/contact.png" alt="contact.png"></a><span>CONTACTS</span></li>
+          <li><a href="#contact-id"><img src="/img/navmenu icons/contact.png" alt="contact.png"></a><span>CONTACTS</span></li>
           <li><a href=""><img src="/img/navmenu icons/work.png" alt="work.png"></a><span>CAREER</span></li>
           <li><a href=""><img src="/img/navmenu icons/enterprise.png" alt="company.png"></a><span>COMPANY</span></li>
+          <li><a href="#home"><img src="/img/profile.png" alt="home.png"></a><span>LOGIN</span></li>
         </ul>
       </div>
       <div class="container">
         <!-- FIRST PAGE or LANDING PAGE-->
             <!-- WELCOME MESSAGE-->
             <div class="main-intro" id="home" >
-                <div class="product-img">
+                <div class="product-img hide-on-mobile">
                   <img src="/img/product-check.png" alt="">
                 </div>
                 <div class="welcome-message">
@@ -35,6 +36,9 @@
                     <h1>Welcome to </h1>
                     <h1><span>Compuware Technologies Inc.</span></h1>
                     <p> We are a global leading company of <strong> Power Supply Design and Manufacturing.</strong> <br>We provide Quality Products and Services </p>
+                    <div class="product-img show-onmobile">
+                      <img src="/img/product-check.png" alt="">
+                    </div>
                     <div class="front-buttons">
                       <button type="button" class="products-btn">Products</button>
                       <button type="button" class="contact-btn">Contact Us</button>
@@ -47,8 +51,8 @@
                   <h2>About Us</h2>
                           <p>The company has dedicated in Technology Innovation, Green Environment, 
                           Module Structure, as its development cores. It has professional RD teams, 
-                          high quality production capabilities, solutions for diversified requirements of power supplies.
-                          It also provides competitive and extraordinary products, which makes it the most reliable partner for its customers and suppliers, and creates the best product competition for its customers.</p>
+                          high quality production capabilities, solutions for diversified requirements of power supplies.</p><p class="hide-on-mobile">
+                          We also provides competitive and extraordinary products, which makes it the most reliable partner for its customers and suppliers, and creates the best product competition for its customers.</p>
                 </div>
             </div>
         <hr>
@@ -226,11 +230,12 @@
                         </div>
                       </div>
                   </div>
+                  <div class="show-allcareer"><button><a href=""> Click to view all</a></button></div>
               </div>
         <hr>
         <!-- Container END -->
         <!--CONTACTS-START-->
-            <div class="m-title contact-tab">
+            <div class="m-title contact-tab" id="contact-id">
               <div class="display-contacts">
                 <div class="contact-content">
 

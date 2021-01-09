@@ -51,10 +51,49 @@
     /**** NAVIGATION END****/  
 /********************************* MAIN INTRO START **************************/
     .main-intro{
-        height: 85vh;
+        height: 80vh;
+        grid-template-columns: unset;
+    }
+    /* Hide Big Power Supply */
+    .product-img{
+        position: unset;
+        left: unset;
+        text-align: center;
     }
 
-    /*ADVERTISEMENT START*/
+    .product-img img{
+        position: unset;
+        width: 75% ;
+      }
+
+    .main-intro .welcome-message {
+        margin: 10vw;
+        font-size: 3vw;
+        width: unset;
+    }
+
+    .front-buttons{
+        margin: unset;
+        margin-top:30px;
+    }
+
+    .front-buttons button{
+        margin: 10px;
+        border: unset;
+        padding: 7.5px 12.5px;
+      
+        /*design*/
+        border-radius: 18px;
+        background-color: blue;
+        color: white;
+        font-size: 0.8rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+      }
+
+      .company-profile{
+        margin: 0;
+      }
 
     /*END OF INTRO*/
     /**************************** PRODUCT ***********************
@@ -153,6 +192,10 @@
         padding: 2.5% 5%;
       }
 
+      .show-allcareer{
+        width: 40%;
+      }
+
       /*****************************CONTACTS****************************************/
       .m-title{
           padding: 20px 20px;
@@ -184,6 +227,11 @@
 
 /*MEDIUM DEVICES*/
 @media (min-width:576px) and (max-width:768px){
+
+    .main-intro .welcome-message {
+        font-size: 2vw;
+    }
+
     .product-sample{
         grid-template-columns: 30vw 30vw;
     }

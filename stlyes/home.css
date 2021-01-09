@@ -1,5 +1,6 @@
 :root{
   --navblue:rgb(23, 25, 136);
+  --secondColor: rgb(51, 139, 16);
   --btnshad: 1px 1px 5px 2px #1f1f1f;
 }
 
@@ -64,6 +65,10 @@ button:focus{
 /**********************************************MAIN NAVBAR MENU*********************************************************************************************************************************/
 
 .menu-toggler{
+  display: none;
+}
+
+.show-onmobile{
   display: none;
 }
 
@@ -137,6 +142,7 @@ button:focus{
     /*BACKGROUND*/
     background-image:linear-gradient(to right, rgba(138, 138, 138, 0.301), rgba(44, 44, 44, 0.747)), url(/img/comp.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
@@ -182,24 +188,30 @@ margin: 20px;
 
   /*design*/
   border-radius: 18px;
-  background-color:rgb(15, 50, 206);
+  background-color: blue;
   color: white;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
+.front-buttons .products-btn:hover{
+  background-color: rgb(49, 124, 19);
+}
+
+.front-buttons .contact-btn:hover{
+  background-color:rgb(15, 50, 206);
+}
+
 .front-buttons .products-btn:focus{
-  background-color: rgb(45, 153, 2);
   outline: unset;
 }
 
 .front-buttons .products-btn{
-  background-color: rgb(49, 124, 19);
+  background-color: rgb(45, 153, 2);
 }
 
 .front-buttons .contact-btn:focus{
-  background-color: blue;
   outline: unset;
 }
 
@@ -332,7 +344,12 @@ display: grid;
   font-size: 17px;
   font-weight: 400;
   overflow: hidden;
-  background-color: white;
+  /* background */
+  background-image:linear-gradient(to right, rgba(99, 99, 99, 0.507), rgba(138, 138, 138, 0.507)), url(/img/timeline-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .milestone .milestone-container h1 {
@@ -501,7 +518,7 @@ display: grid;
 }
 
 .milestone .date {
-  background:rgb(0, 88, 69);
+  background:var(--secondColor);
   border-radius: 5px;
   display: inline-block;
   color: #FFFFFF;
@@ -517,7 +534,7 @@ display: grid;
 
 .milestone-show button{
     border: 0px solid;
-    background-color: #0d017c;
+    background-color: var(--navblue);
     color: white;
     padding: 10px;
     margin-bottom: 20px;
@@ -585,12 +602,12 @@ display: grid;
 
 .apply-now{
   padding: 0 10px;
-  background-color: rgb(3, 212, 3);
+  background-color: var(--secondColor);
   border-radius: 15px;
 }
 
 .apply-now:hover{
-  background-color: rgb(0, 255, 0);
+  background-color:rgb(0, 207, 0) ;
 }
 
 .apply-now a{
@@ -605,6 +622,19 @@ display: grid;
 
 .job a:link{
   background: unset;
+}
+
+.show-allcareer{
+  font-size: 1rem;
+  padding: 15px;
+  width: 30%;
+  margin: auto;
+  
+  background-color: var(--navblue);
+}
+
+.show-allcareer a{
+  color: white;
 }
 /*************************************CONTACTS***********************************/
 
